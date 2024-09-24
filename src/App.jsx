@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Navbar from './Commponents/Navbar/Navbar';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
@@ -8,12 +7,12 @@ import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Commponents/Footer/Footer';
-import './firebase';
+import './firebase'; // Firebase کی ترتیب شامل کریں
 import men_banner from './Commponents/Assets/banner_mens.png';
 import women_banner from './Commponents/Assets/banner_women.png';
 import kids_banner from './Commponents/Assets/banner_kids.png';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from './firebase';
+import { auth } from './firebase'; // auth ماڈیول درآمد کریں
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -54,4 +53,3 @@ const App = () => {
 };
 
 export default App;
-
